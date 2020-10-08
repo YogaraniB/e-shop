@@ -26,6 +26,7 @@
     "jquery": "^3.5.1",
     "ng-image-slider": "^2.6.4",
     "rxjs": "~6.5.5",
+    "rxjs-compat": "^6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

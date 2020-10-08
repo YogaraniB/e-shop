@@ -3,6 +3,7 @@
         <button mat-icon-button>
             <mat-icon (click)="drawer.toggle()">menu</mat-icon>
           </button>
+          
             <div class="brand">
                 <span>Flipkart<img class="img-fluid" src="assets/img/logo.png" style="width:50px;"></span>     
             </div>
@@ -15,6 +16,7 @@
                   </button>
                 </div>
             </div>
+            <div style="font-size: medium; color: azure; padding-left: 10px;" class="username">{{userDisplayName}}</div>
             <a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">logout</a>
             <a  mat-button  routerLink="/home" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Products</a>
             <div class="example-icon shoppingcart-icon">
@@ -23,7 +25,7 @@
     </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #drawer mode="side" opened role="navigation" class="example-sidenav" style="background-color: #00B4CC;">
+  <mat-sidenav #drawer mode="side" closed role="navigation" class="example-sidenav" style="background-color: #00B4CC;">
        <mat-nav-list style="width: 150px;">
        <!-- <mat-list-item>
           <a routerLink='slider' >Men</a>
@@ -47,9 +49,10 @@
       </mat-nav-list>
     </mat-sidenav> 
     <mat-sidenav-content>
-       <app-home></app-home>
+     
         <p style="height: 88vh;">
           <router-outlet></router-outlet>
         </p>
+        <app-home></app-home>
     </mat-sidenav-content>
 </mat-sidenav-container>  
