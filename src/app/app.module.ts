@@ -15,21 +15,20 @@ import { SliderComponent } from './slider/slider.component';
 import { CartComponent } from './cart/cart.component';
 import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
-//import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { KidsComponent } from './kids/kids.component';
 import { MainComponent } from './main/main.component';
 import { NextComponent } from './next/next.component';
 import { HomeLayoutComponent } from './layouts/home-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout.component';
-export const routes : Routes= [
 import { SharedModule } from './shared/shared.module';
-/*export const routes : Routes= [
+ export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
   {path:'kids',component:KidsComponent},
   {path:'main',component:MainComponent},
  
-];*/
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +51,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,SharedModule,
     AppRoutingModule,MaterialModule,
     NgImageSliderModule,
-    BrowserAnimationsModule//, RouterModule.forRoot(routes)
+    BrowserAnimationsModule, RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
