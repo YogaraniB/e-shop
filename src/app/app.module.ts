@@ -28,6 +28,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { KidsComponent } from './kids/kids.component';
 import { MainComponent } from './main/main.component';
 import { NextComponent } from './next/next.component';
+import { HomeLayoutComponent } from './layouts/home-layout.component';
+import { LoginLayoutComponent } from './layouts/login-layout.component';
 export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
@@ -49,7 +51,9 @@ export const routes : Routes= [
     WomenComponent,
     KidsComponent,
     MainComponent,
-    NextComponent
+    NextComponent,
+    LoginLayoutComponent,
+    HomeLayoutComponent
   ],
   imports: [
     BrowserModule,

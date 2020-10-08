@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
       
     });
-    this.returnUrl = '/main';
+    this.returnUrl = '/home';
 
    }
   get f()
