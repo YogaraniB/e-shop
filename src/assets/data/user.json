@@ -1,0 +1,35 @@
+{
+    "user": [
+      {
+        "userid": 1,
+        "username": "Surya ",
+        "password": "surya" ,
+        "address": {
+          "doorNo": 11,
+          "street": "xyz"
+        } 
+        
+      },
+      {
+        "userid": 2,
+        "username": "Matheswari ",
+        "password": "123",  
+        "address": {
+          "doorNo": 12,
+          "street": "abc"
+        }
+        
+      },
+      {
+        "userid": 3,
+        "username": "Rajamaheswari ",
+        "password": "mahi123", 
+        "address": {
+          "doorNo": 13,
+          "street": "efg"
+        }
+        
+      }
+     
+    ]
+}
