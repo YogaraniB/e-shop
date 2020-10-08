@@ -1,59 +1,65 @@
 <mat-toolbar style="background-color: rgb(0, 183, 255);"   class="fixed-header">
-    <mat-toolbar-row>
-        <button mat-icon-button>
-            <mat-icon (click)="drawer.toggle()">menu</mat-icon>
-          </button>
-            <div class="brand">
-                <span>Flipkart<img class="img-fluid" src="assets/img/logo.png" style="width:50px;"></span>     
-            </div>
-            <!--Search bar-->
-            <div class="sb-example-1">
-                <div class="search">
-                   <input type="text" class="searchTerm" placeholder="Search for products, brands and more">
-                   <button type="submit" class="searchButton">
-                     <i class="fa fa-search"></i>
-                  </button>
-                </div>
-            </div>
-           
-            <a  mat-button  routerLink="/home" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Products</a>
-            <div class="example-icon shoppingcart-icon">
-                <a mat-button routerLink="/cart" style="font-size: 20px; padding-left: 15px; margin-left: 50px;"><mat-icon>shopping_cart</mat-icon>Cart</a> 
-            </div>
-            <a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">logout</a>
-    </mat-toolbar-row>
+  <mat-toolbar-row>
+      <button mat-icon-button>
+          <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+        </button>
+          <div class="brand">
+              <span>Flipkart<img class="img-fluid" src="assets/img/logo.png" style="width:50px;"></span>     
+          </div>
+          <!--Search bar-->
+          <div class="sb-example-1">
+              <div class="search">
+                 <input type="text" class="searchTerm" placeholder="Search for products, brands and more">
+                 <button type="submit" class="searchButton">
+                   <i class="fa fa-search"></i>
+                </button>
+              </div>
+          </div>
+          <div style="font-size: medium; color: azure; padding-left: 10px;" class="username">Welcome {{userDisplayName}}</div>
+          <!--<a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Login</a>-->
+          <a  mat-button  routerLink="/home" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Products</a>
+          <div class="example-icon shoppingcart-icon">
+              <a mat-button routerLink="/cart" style="font-size: 20px; padding-left: 15px; margin-left: 50px;"><mat-icon>shopping_cart</mat-icon>Cart</a> 
+          </div>
+          
+          <a  mat-button  routerLink="/profile" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; "><mat-icon>face</mat-icon></a>
+&nbsp;
+
+
+          <a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Logout</a>
+         <!--<a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">logout</a>--> 
+  </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #drawer mode="side" closed role="navigation" class="example-sidenav" style="background-color: #00B4CC;">
-<mat-sidenav-container>
-    <mat-sidenav #drawer mode="side" closed role="navigation" style="background-color: #00B4CC;">
-       <mat-nav-list style="width: 150px;">
-       <!-- <mat-list-item>
-          <a routerLink='slider' >Men</a>
-        </mat-list-item>
-        <br>
-       <mat-list-item>
-         <a routerLink='details' >Women</a>
-       </mat-list-item>
-       <br>
-       <mat-list-item>
-         <a routerLink='products'>Kids</a>
-       </mat-list-item>
-       <br>
-       <mat-list-item>
-        <a routerLink="javascript:void(0);" (click)="logout()" >Logout</a>
-      </mat-list-item>-->
-        <a mat-list-item routerLink='men'> Men </a>
-        <a mat-list-item routerLink='women'> Women </a>
-        <a mat-list-item routerLink='kids'> Kids </a>  
-        
-      </mat-nav-list>
-    </mat-sidenav> 
-    <mat-sidenav-content>
+<mat-sidenav #drawer mode="side" closed role="navigation" class="example-sidenav" style="background-color: #00B4CC;">
+
+     <mat-nav-list style="width: 150px;">
+     <!-- <mat-list-item>
+        <a routerLink='slider' >Men</a>
+      </mat-list-item>
+      <br>
+     <mat-list-item>
+       <a routerLink='details' >Women</a>
+     </mat-list-item>
+     <br>
+     <mat-list-item>
+       <a routerLink='products'>Kids</a>
+     </mat-list-item>
+     <br>
+     <mat-list-item>
+      <a routerLink="javascript:void(0);" (click)="logout()" >Logout</a>
+    </mat-list-item>-->
+      <a mat-list-item routerLink='men'> Men </a>
+      <a mat-list-item routerLink='women'> Women </a>
+      <a mat-list-item routerLink='kids'> Kids </a>  
       
-        <p style="height: 88vh;">
-          <router-outlet></router-outlet>
-        </p>
-    </mat-sidenav-content>
+    </mat-nav-list>
+  </mat-sidenav> 
+  <mat-sidenav-content>
+    
+      <p style="height: 88vh;">
+        <router-outlet></router-outlet>
+      </p>
+
+  </mat-sidenav-content>
 </mat-sidenav-container>     
-               

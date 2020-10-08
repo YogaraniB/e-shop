@@ -8,11 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
- 
+  userDisplayName = '';
   constructor(private router: Router,public authService: AuthService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.userDisplayName = localStorage.getItem('token');
   }
   
-
 }
+
+

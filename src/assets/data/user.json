@@ -4,6 +4,8 @@
         "userid": 1,
         "username": "Surya ",
         "password": "surya" ,
+        "email":"suryarajan361@gmail.com",
+        "phoneno":9566572539,
         "address": {
           "doorNo": 11,
           "street": "xyz"
@@ -13,7 +15,9 @@
       {
         "userid": 2,
         "username": "Matheswari ",
-        "password": "123",  
+        "password": "123", 
+        "email":"matheswari123.com",
+        "phoneno":9566572565, 
         "address": {
           "doorNo": 12,
           "street": "abc"
@@ -24,6 +28,8 @@
         "userid": 3,
         "username": "Rajamaheswari ",
         "password": "mahi123", 
+        "email":"rajamaheshwari@gmail.com",
+        "phoneno":95665654667,
         "address": {
           "doorNo": 13,
           "street": "efg"

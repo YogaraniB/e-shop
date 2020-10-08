@@ -12,24 +12,27 @@ import { data } from 'jquery';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
- 
   userid:any;
   loginForm: FormGroup;
   message: string;
   returnUrl: string;
   submitted:boolean;
   invalidLogin:boolean;
+
   constructor(private formBuilder: FormBuilder,private router: Router,public authService: AuthService,private userService: UserService, private http:HttpClient) { }
 
   ngOnInit() 
    {
     this.loginForm = this.formBuilder.group({
       userid: ['', Validators.required],
-     
-      password: ['', Validators.required]
+      
+      password: ['', Validators.required],
+      email: [''],
+      phoneno: [''],
+      
       
     });
-    this.returnUrl = '/main';
+    this.returnUrl = '/home';
 
    }
   get f()
@@ -52,59 +55,70 @@ export class LoginComponent implements OnInit {
     this.userService.getUser(this.f.userid.value).subscribe(data=> {
       console.log(JSON.stringify(data));
       debugger;
-       const userdetail=userArray.filter((user)=>user.userid==this.f.userid.value);
-       console.log(JSON.stringify(userdetail));
-       console.log(userdetail[0].password==this.f.password.value);
+      const userdetail=userArray.filter((user)=>user.userid==this.f.userid.value);
+      console.log(JSON.stringify(userdetail));
+      console.log(userdetail[0].password==this.f.password.value);
+
       if(userdetail[0].userid==this.f.userid.value)
       {
-        localStorage.setItem('userid',this.f.userid.value);  
+        localStorage.setItem('userid',this.f.userid.value);
         localStorage.setItem('password',this.f.password.value);
+        localStorage.setItem('email',userdetail[0].email);
+        localStorage.setItem('phoneno',userdetail[0].phoneno);
+        //localStorage.setItem('address',userdetail[0].address.doorNo);
+        //localStorage.setItem('address',userdetail[0].address.street);
+
         localStorage.setItem('isLoggedIn', "true");
-        localStorage.setItem('token', this.f.userid.value);
+        localStorage.setItem('password',this.f.password.value);
+        localStorage.setItem('token', userdetail[0].username);
+    
         this.router.navigate([this.returnUrl]);
       }
       else
       {
         this.message = "Please! check your userid and password";
       } 
-     
+      
      },
     )
   }
 }
 }
-
-
-  export const userArray= [
-    {
-      "userid": 1,
-      "username": "Surya ",
-      "password": "surya" ,
-      "address": {
-        "doorNo": 11,
-        "street": "xyz"
-      } 
-      
-    },
-    {
-      "userid": 2,
-      "username": "Matheswari ",
-      "password": "123",  
-      "address": {
-        "doorNo": 12,
-        "street": "abc"
-      }
-      
-    },
-    {
-      "userid": 3,
-      "username": "Rajamaheswari ",
-      "password": "mahi123", 
-      "address": {
-        "doorNo": 13,
-        "street": "efg"
-      }
-      
-    }
+export const userArray=
+[
+ {
+  "userid": 1,
+  "username": "Surya ",
+  "password": "surya" ,
+  "email":"suryarajan361@gmail.com",
+  "phoneno":"9566572539",
+  "address": {
+    "doorNo": "A11",
+    "street": "xyz"
+  }  
    
-  ]
+ },
+ {"userid": 2,
+ "username": "Matheswari ",
+ "password": "123", 
+ "email":"matheswari123.com",
+ "phoneno":"9566572565", 
+ "address": {
+   "doorNo": "B12",
+   "street": "abc"
+  }  
+   
+ },
+ {
+  "userid": 3,
+  "username": "Rajamaheswari ",
+  "password": "mahi123", 
+  "email":"rajamaheshwari@gmail.com",
+  "phoneno":"95665654667",
+  "address": {
+    "doorNo": "C13",
+    "street": "efg"
+  } 
+   
+ }
+]

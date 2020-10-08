@@ -44,7 +44,7 @@
      <div class="login-form">
       <p *ngIf="message" class="text-center error">{{message}}</p>
         <form [formGroup]="loginForm" (ngSubmit)="login()">
-          {{loginForm.value|json}}
+        
            <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.userid.errors }">
               
               <input type="text" placeholder="UserId" class="form-control" formControlName="userid"/>

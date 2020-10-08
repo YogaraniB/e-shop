@@ -14,15 +14,20 @@ import { JsonService } from '../json.service';
 export class HomeComponent implements OnInit {
   id: string;
   productsData: any;
+  userDisplayName = '';
   constructor(private router: Router,public authService: AuthService,private httpClient: HttpClient,
     private jsonService: JsonService) { }
 
   ngOnInit() {
+    this.userDisplayName = localStorage.getItem('token');
     this.id = localStorage.getItem('token');
     this.jsonService.getData().subscribe((data)=>
       this.productsData = data
     )
+   
   }
+  }
+
   /*
   logout(): void {
     console.log("Logout");
@@ -30,4 +35,4 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 */
-}
+

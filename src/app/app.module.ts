@@ -28,16 +28,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { KidsComponent } from './kids/kids.component';
 import { MainComponent } from './main/main.component';
 import { NextComponent } from './next/next.component';
+import { HomeLayoutComponent } from './layouts/home-layout.component';
+import { LoginLayoutComponent } from './layouts/login-layout.component';
+import { ProfileComponent } from './profile/profile.component';
 export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
   {path:'kids',component:KidsComponent},
-  {path:'main',component:MainComponent},
+ 
  
 ];
 @NgModule({
   declarations: [
     AppComponent,
+    HomeLayoutComponent,
+    LoginLayoutComponent,
     NavComponent,
     LoginComponent,
     HomeComponent,
@@ -49,7 +54,8 @@ export const routes : Routes= [
     WomenComponent,
     KidsComponent,
     MainComponent,
-    NextComponent
+    NextComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
