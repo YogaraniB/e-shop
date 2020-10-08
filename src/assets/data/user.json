@@ -15,13 +15,9 @@
       {
         "userid": 2,
         "username": "Matheswari ",
-<<<<<<< HEAD
         "password": "123", 
         "email":"matheswari123.com",
         "phoneno":9566572565, 
-=======
-        "password": "123",
->>>>>>> dd8392390d1bd691f02449a269b95f00d7548b6a
         "address": {
           "doorNo": 12,
           "street": "abc"
@@ -31,13 +27,9 @@
       {
         "userid": 3,
         "username": "Rajamaheswari ",
-<<<<<<< HEAD
         "password": "mahi123", 
         "email":"rajamaheshwari@gmail.com",
         "phoneno":95665654667,
-=======
-        "password": "mahi123",
->>>>>>> dd8392390d1bd691f02449a269b95f00d7548b6a
         "address": {
           "doorNo": 13,
           "street": "efg"
