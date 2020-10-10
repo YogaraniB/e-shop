@@ -21,8 +21,9 @@ import { MainComponent } from './main/main.component';
 import { NextComponent } from './next/next.component';
 import { HomeLayoutComponent } from './layouts/home-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout.component';
-import { ProfileComponent } from './profile/profile.component';
 import { SharedModule } from './shared/shared.module';
+import { MatdialogComponent } from './matdialog/matdialog.component';
+import {MatDialogModule} from "@angular/material/dialog";
 export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
@@ -33,6 +34,7 @@ export const routes : Routes= [
 @NgModule({
   declarations: [
     AppComponent,
+   
     HomeLayoutComponent,
     LoginLayoutComponent,
     NavComponent,
@@ -47,15 +49,18 @@ export const routes : Routes= [
     KidsComponent,
     MainComponent,
     NextComponent,
-    ProfileComponent
+  
+    MatdialogComponent
   ],
   imports: [
     BrowserModule,SharedModule,
+    MatDialogModule,
     AppRoutingModule,MaterialModule,
     NgImageSliderModule,
     BrowserAnimationsModule, RouterModule.forRoot(routes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [MatdialogComponent]
 })
 export class AppModule { }

@@ -22,9 +22,8 @@
               <a mat-button routerLink="/cart" style="font-size: 20px; padding-left: 15px; margin-left: 50px;"><mat-icon>shopping_cart</mat-icon>Cart</a> 
           </div>
           
-          <a  mat-button  routerLink="/profile" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; "><mat-icon>face</mat-icon></a>
+          <a  mat-button (click)="dialog()" style="font-size: 20px; padding-left: 15px; "><mat-icon>face</mat-icon></a>
 &nbsp;
-
 
           <a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Logout</a>
          <!--<a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">logout</a>--> 

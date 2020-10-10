@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { ProfileComponent } from './profile/profile.component';
+
 import { DetailsComponent } from './details/details.component';
 import { AuthGuard } from './auth.guard';
 import { CartComponent } from './cart/cart.component';
@@ -38,7 +38,7 @@ const routes: Routes = [
   { path:'login', component: LoginComponent,pathMatch: 'full'},
   { path:'details/:id',component: DetailsComponent,pathMatch: 'full'},
   { path:'cart',component: CartComponent,pathMatch: 'full'},
-  { path:'profile',component: ProfileComponent,pathMatch: 'full'}
+ 
 ];
 
 @NgModule({
