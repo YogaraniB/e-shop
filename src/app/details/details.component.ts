@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Details } from '../details';
 import { CartService } from '../cart.service';
+import { MatSnackBar } from "@angular/material/snack-bar";
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
@@ -10,9 +11,10 @@ import { CartService } from '../cart.service';
 export class DetailsComponent implements OnInit {
  
 details;
-  constructor(private route: ActivatedRoute,private cartService: CartService) { }
-  addToCart(details) {
-    window.alert('Your product has been added to the cart!');
+  constructor(private route: ActivatedRoute,private cartService: CartService,private snackBar: MatSnackBar) { }
+
+  addToCart(details,message,action) {
+    this.snackBar.open(message,action);
     this.cartService.addToCart(details);
   }
 

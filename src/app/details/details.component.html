@@ -8,7 +8,7 @@
     <h3 style="font-weight:100; font-family: serif;">{{details.description}}</h3>
     <h2 style="font-weight: 400;">{{details.price | currency:'INR'}}</h2>
     <div class="button-group">
-      <button (click)="addToCart(details)" mat-button mat-raised-button color="primary" class="buy-now-button space">BUY NOW</button>
+      <button (click)="addToCart(details,'Item added to your cart','Dismiss')">BUY NOW</button>
       <button [routerLink]="['/cart']" mat-button mat-stroked-button color="primary" class="button">ADD TO CART</button>
       <button [routerLink]=" [ '/home']" mat-button mat-stroked-button color="primary" style="margin-left: 5px;"class="button">Back</button>
     </div>
