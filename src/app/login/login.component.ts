@@ -75,7 +75,7 @@ import { Login } from '../login';
 import{ HttpClient} from  '@angular/common/http';
 import { AuthService } from '../auth.service';
 import { UserService } from "../service/user.service";
-import { data } from 'jquery';
+
 
 @Component({
   selector: 'app-login',
