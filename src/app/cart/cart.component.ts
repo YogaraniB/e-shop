@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
 import { Router } from '@angular/router';
+import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-cart',
@@ -11,15 +12,16 @@ export class CartComponent implements OnInit {
   items;
   quantity: number;
   
-  constructor(private cartService: CartService,private router: Router) {
+  constructor(private cartService: CartService,private router: Router,private snackBar: MatSnackBar) {
     this.items = this.cartService.getItems();
    }
 
   ngOnInit(): void {
   }
-  onSubmit(){
-    window.alert('Thank you for your Feedback!');
-    this.router.navigate(['/home']);
+  openSnackbar(message, action) {
+    this.snackBar.open(message, action);
+    //this.router.navigate(['/home']);
+
   }
 
 }
