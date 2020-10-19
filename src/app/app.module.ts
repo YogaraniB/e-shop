@@ -54,21 +54,12 @@ export const routes : Routes= [
   
     MatdialogComponent,
   
-<<<<<<< HEAD
     PaymentComponent
-=======
-    
->>>>>>> 33d4648fffce1f7f61f0bedccbce468cd34a8704
   ],
   imports: [
     BrowserModule,SharedModule,
     MatDialogModule,
-<<<<<<< HEAD
     AppRoutingModule,MaterialModule,MatSnackBarModule,
-=======
-    MatSnackBarModule,
-    AppRoutingModule,MaterialModule,
->>>>>>> 33d4648fffce1f7f61f0bedccbce468cd34a8704
     NgImageSliderModule,
     BrowserAnimationsModule, RouterModule.forRoot(routes)
   ],
