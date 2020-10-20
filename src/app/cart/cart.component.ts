@@ -11,12 +11,15 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 export class CartComponent implements OnInit {
   items;
   quantity: number;
+  total;
   
   constructor(private cartService: CartService,private router: Router,private snackBar: MatSnackBar) {
     this.items = this.cartService.getItems();
    }
+  
 
   ngOnInit(): void {
+
   }
   openSnackbar(message, action) {
     this.snackBar.open(message, action);

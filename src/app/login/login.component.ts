@@ -100,6 +100,7 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required],
       email: [''],
       phoneno: [''],
+      address:['']
       
       
     });
@@ -136,7 +137,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('password',this.f.password.value);
         localStorage.setItem('email',userdetail[0].email);
         localStorage.setItem('phoneno',userdetail[0].phoneno);
-        //localStorage.setItem('address',userdetail[0].address.doorNo);
+        localStorage.setItem('address',userdetail[0].address);
         //localStorage.setItem('address',userdetail[0].address.street);
 
         localStorage.setItem('isLoggedIn', "true");
@@ -163,10 +164,7 @@ export const userArray=
   "password": "surya" ,
   "email":"suryarajan361@gmail.com",
   "phoneno":"9566572539",
-  "address": {
-    "doorNo": "A11",
-    "street": "xyz"
-  }  
+  "address": "abc street, Chennai"  
    
  },
  {"userid": 2,
@@ -174,10 +172,7 @@ export const userArray=
  "password": "123", 
  "email":"matheswari123.com",
  "phoneno":"9566572565", 
- "address": {
-   "doorNo": "B12",
-   "street": "abc"
-  }  
+ "address": "xyz street,Coimbatore" 
    
  },
  {
@@ -186,10 +181,7 @@ export const userArray=
   "password": "mahi123", 
   "email":"rajamaheshwari@gmail.com",
   "phoneno":"95665654667",
-  "address": {
-    "doorNo": "C13",
-    "street": "efg"
-  } 
+  "address": "dfl street, Trichy"
    
  }
 ]
