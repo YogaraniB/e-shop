@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <h3 class="text-center">Payment Details</h3>
+                        <img class="img-fluid cc-img" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                    </div>
+                </div>
+                <div class="card-block col-12" style="margin-top: 5px;">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-7 col-md-12">
+                                <div class="form-group">
+                                    <label>CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx" required/>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text text-muted">
+                                                <i class="fa fa-cc-visa mx-1"></i>
+                                        
+                                                <i class="fa fa-cc-mastercard mx-1"></i>
+                                            </span>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label><span class="hidden-xs">EXPIRATION</span></label>
+                                    <div class="input-group">
+                                        <input type="tel" placeholder="MM" name="" class="form-control" required>
+                                        <input type="tel" placeholder="YY" name="" class="form-control" required>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 float-xs-right">
+                                <div class="form-group">
+                                    <label>CV CODE</label>
+                                    <input type="tel" class="form-control" placeholder="xxx" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-12">
+                                <div class="form-group">
+                                    <label>CARD HOLDER NAME</label>
+                                    <input type="text" class="form-control" placeholder="Card Holder Name" required/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button (click)="openSnackbar('Payment Successfully!!' , 'dismiss')" class="btn btn-warning btn-lg btn-block">Make payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { CartComponent } from './cart/cart.component';
 import { CartService } from './cart.service';
 import { HomeLayoutComponent } from './layouts/home-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path:'login', component: LoginComponent,pathMatch: 'full'},
   { path:'details/:id',component: DetailsComponent,pathMatch: 'full'},
   { path:'cart',component: CartComponent,pathMatch: 'full'},
+  { path:'payment',component: PaymentComponent,pathMatch: 'full'},
  
 ];
 

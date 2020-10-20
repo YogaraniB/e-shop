@@ -18,3 +18,8 @@
     font-size: medium;
     font-weight: 500;
 }
+.mat-raised-button.mat-success{
+    color: #f0fff3;
+  background-color: #100d94;
+  text-align: center;
+}

@@ -24,6 +24,8 @@ import { LoginLayoutComponent } from './layouts/login-layout.component';
 import { SharedModule } from './shared/shared.module';
 import { MatdialogComponent } from './matdialog/matdialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { PaymentComponent } from './payment/payment.component';
 export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
@@ -50,12 +52,14 @@ export const routes : Routes= [
     MainComponent,
     NextComponent,
   
-    MatdialogComponent
+    MatdialogComponent,
+  
+    PaymentComponent
   ],
   imports: [
     BrowserModule,SharedModule,
     MatDialogModule,
-    AppRoutingModule,MaterialModule,
+    AppRoutingModule,MaterialModule,MatSnackBarModule,
     NgImageSliderModule,
     BrowserAnimationsModule, RouterModule.forRoot(routes)
   ],

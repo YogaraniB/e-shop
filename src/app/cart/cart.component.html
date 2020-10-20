@@ -7,6 +7,7 @@
                 <span>{{ item.price | currency:'INR' }}</span>
             </div>
             <p><b>Grand Total:</b></p>
+            <button mat-button [routerLink]="['/payment']" mat-raised-button color="primary" class="buy-now-button space">Checkout</button>
         </div>
     </div>
 <br>
@@ -34,7 +35,9 @@
           <label>Comment</label>
           <textarea class="form-control" rows="5"></textarea>
       </div>
-      <button (click)="onSubmit()" class="btn btn-primary btn-block">Send</button>
+      <button mat-raised-button color="success"  (click)="openSnackbar('Thank you for your Feedback', 'Close')">
+        submit
+      </button>
     </form>
     </div>
   </div>

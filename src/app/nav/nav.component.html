@@ -15,7 +15,7 @@
                 </button>
               </div>
           </div>
-          <div style="font-size: medium; color: azure; padding-left: 10px;" class="username">Welcome {{userDisplayName}}</div>
+          <div style="font-size: medium; color: azure; padding-left: 10px;" class="username">Hi,{{userDisplayName}}</div>
           <!--<a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Login</a>-->
           <a  mat-button  routerLink="/home" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">Products</a>
           <div class="example-icon shoppingcart-icon">
@@ -51,11 +51,10 @@
       <a mat-list-item routerLink='men'> Men </a>
       <a mat-list-item routerLink='women'> Women </a>
       <a mat-list-item routerLink='kids'> Kids </a>  
-      
     </mat-nav-list>
   </mat-sidenav> 
   <mat-sidenav-content>
-    
+  
       <p style="height: 88vh;">
         <router-outlet></router-outlet>
       </p>
