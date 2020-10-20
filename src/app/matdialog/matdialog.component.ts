@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Component, OnInit} from '@angular/core';
+import{ MatDialog,MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-matdialog',
+  selector:'app-matdialog',
   templateUrl: './matdialog.component.html',
   styleUrls: ['./matdialog.component.css']
 })
