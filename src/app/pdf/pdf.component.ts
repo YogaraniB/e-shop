@@ -9,13 +9,12 @@ import jspdf from 'jspdf';
   styleUrls: ['./pdf.component.css']
 })
 export class PdfComponent implements OnInit {
+  userDisplayId='';
   userDisplayName = '';
-  userDisplayAdd='';
   userDisplayEmail='';
   userDisplayPhone='';
-  userDisplayCity='';
-  userDisplayState='';
   @ViewChild('reportContent') reportContent:ElementRef;
+  
     
   constructor() { }
   downloadPDF() {
@@ -47,15 +46,38 @@ export class PdfComponent implements OnInit {
   }
   */
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.userDisplayId = localStorage.getItem('userid');
     this.userDisplayName = localStorage.getItem('token');
     this.userDisplayEmail = localStorage.getItem('email');
     this.userDisplayPhone = localStorage.getItem('phoneno');
-    this.userDisplayAdd = localStorage.getItem('address');
-    this.userDisplayCity = localStorage.getItem('city');
-    this.userDisplayState = localStorage.getItem('state');
   }
-
- 
+/*
+  USERS = [
+    {
+      "userid": 1,
+      "username": "Surya ",
+      "password": "surya" ,
+      "email":"suryarajan361@gmail.com",
+      "phoneno":"9566572539",
+      "address": "abc street, Chennai"      
+     },
+     {"userid": 2,
+     "username": "Matheswari ",
+     "password": "123", 
+     "email":"matheswari123@gmail.com",
+     "phoneno":"9566572565", 
+     "address": "xyz street,Coimbatore"     
+     },
+     {
+      "userid": 3,
+      "username": "Rajamaheswari ",
+      "password": "mahi123", 
+      "email":"rajamaheshwari@gmail.com",
+      "phoneno":"95665654667",
+      "address": "dfl street, Trichy"
+     }
+   ];
+   */
 
 }

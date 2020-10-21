@@ -12,13 +12,18 @@
             <th>City</th>
             <th>State</th>
           </tr>
+
           <tr>
-            <th>{{userDisplayName}}</th>
+            <!--<tr *ngFor="let user of USERS">
+            <th>{{user.userid}}</th>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phoneno}}</td>-->
+            <th>{{userDisplayId}}</th>
+            <td>{{userDisplayName}}</td>
             <td>{{userDisplayEmail}}</td>
             <td>{{userDisplayPhone}}</td>
-            <td>{{userDisplayAdd}}</td>
-            <td>{{userDisplayCity}}</td>
-            <td>{{userDisplayState}}</td>
+            
           </tr>
         </table>
       </div>
