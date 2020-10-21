@@ -13,9 +13,8 @@ export class PaymentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openSnackbar(message,action){
-    this.snackBar.open(message,action);
-   // window.alert('Payment Successfully!!');
+  openPdf(){
+   
     this.router.navigate(['/pdf']);
   }
  
