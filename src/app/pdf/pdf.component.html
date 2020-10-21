@@ -10,11 +10,18 @@
             <th>Email</th>
             <th>Phone</th>
           </tr>
-          <tr *ngFor="let user of USERS">
+
+          <tr>
+            <!--<tr *ngFor="let user of USERS">
             <th>{{user.userid}}</th>
             <td>{{user.username}}</td>
             <td>{{user.email}}</td>
-            <td>{{user.phoneno}}</td>
+            <td>{{user.phoneno}}</td>-->
+            <th>{{userDisplayId}}</th>
+            <td>{{userDisplayName}}</td>
+            <td>{{userDisplayEmail}}</td>
+            <td>{{userDisplayPhone}}</td>
+            
           </tr>
         </table>
       </div>

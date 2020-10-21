@@ -10,6 +10,10 @@ import * as jspdf from 'jspdf';
 export class PdfComponent implements OnInit {
   
   @ViewChild('reportContent') reportContent:ElementRef;
+  userDisplayId='';
+  userDisplayName = '';
+  userDisplayEmail='';
+  userDisplayPhone='';
     
   constructor() { }
   downloadPDF() {
@@ -41,9 +45,13 @@ export class PdfComponent implements OnInit {
   }
   */
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.userDisplayId = localStorage.getItem('userid');
+    this.userDisplayName = localStorage.getItem('token');
+    this.userDisplayEmail = localStorage.getItem('email');
+    this.userDisplayPhone = localStorage.getItem('phoneno');
   }
-
+/*
   USERS = [
     {
       "userid": 1,
@@ -56,7 +64,7 @@ export class PdfComponent implements OnInit {
      {"userid": 2,
      "username": "Matheswari ",
      "password": "123", 
-     "email":"matheswari123.com",
+     "email":"matheswari123@gmail.com",
      "phoneno":"9566572565", 
      "address": "xyz street,Coimbatore"     
      },
@@ -69,5 +77,6 @@ export class PdfComponent implements OnInit {
       "address": "dfl street, Trichy"
      }
    ];
+   */
 
 }

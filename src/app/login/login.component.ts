@@ -170,7 +170,7 @@ export const userArray=
  {"userid": 2,
  "username": "Matheswari ",
  "password": "123", 
- "email":"matheswari123.com",
+ "email":"matheswari123@gmail.com",
  "phoneno":"9566572565", 
  "address": "xyz street,Coimbatore" 
    

@@ -10,12 +10,26 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 })
 export class CartComponent implements OnInit {
   items;
-  quantity: number;
-  total;
+ // quantity: number;
+  quantity = 0;
+  total:number;
+  sum: 0;
   
   constructor(private cartService: CartService,private router: Router,private snackBar: MatSnackBar) {
     this.items = this.cartService.getItems();
    }
+
+   incrementQuantity() {
+    this.quantity = this.quantity + 1;
+    }
+  
+
+  decrementQuantity() {
+    if (this.quantity!=0) {
+      this.quantity= this.quantity - 1;
+    }
+  }
+ 
   
 
   ngOnInit(): void {
