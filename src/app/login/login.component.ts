@@ -100,6 +100,10 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required],
       email: [''],
       phoneno: [''],
+      address:[''],
+      state:[''],
+      city:[''],
+
       
       
     });
@@ -136,9 +140,9 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('password',this.f.password.value);
         localStorage.setItem('email',userdetail[0].email);
         localStorage.setItem('phoneno',userdetail[0].phoneno);
-        //localStorage.setItem('address',userdetail[0].address.doorNo);
-        //localStorage.setItem('address',userdetail[0].address.street);
-
+        localStorage.setItem('address',userdetail[0].address);
+        localStorage.setItem('city',userdetail[0].city);
+        localStorage.setItem('state',userdetail[0].state);
         localStorage.setItem('isLoggedIn', "true");
         localStorage.setItem('password',this.f.password.value);
         localStorage.setItem('token', userdetail[0].username);
@@ -163,21 +167,20 @@ export const userArray=
   "password": "surya" ,
   "email":"suryarajan361@gmail.com",
   "phoneno":"9566572539",
-  "address": {
-    "doorNo": "A11",
-    "street": "xyz"
-  }  
+  "address":"5/231,s15 RK nagar" ,
+  "city":"Tuticorin",
+  "state":"Tamilnadu",
    
  },
- {"userid": 2,
+ {
+   "userid": 2,
  "username": "Matheswari ",
  "password": "123", 
  "email":"matheswari123.com",
  "phoneno":"9566572565", 
- "address": {
-   "doorNo": "B12",
-   "street": "abc"
-  }  
+ "address":"5/234,s16 PK nagar" ,
+  "city":"Tuticorin",
+  "state":"Tamilnadu",
    
  },
  {
@@ -186,10 +189,9 @@ export const userArray=
   "password": "mahi123", 
   "email":"rajamaheshwari@gmail.com",
   "phoneno":"95665654667",
-  "address": {
-    "doorNo": "C13",
-    "street": "efg"
-  } 
+  "address":"5/233,a15 T nagar" ,
+  "city":"Sivakasi",
+  "state":"Tamilnadu"
    
- }
+ },
 ]

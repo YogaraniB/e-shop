@@ -40,6 +40,8 @@ const routes: Routes = [
   { path:'details/:id',component: DetailsComponent,pathMatch: 'full'},
   { path:'cart',component: CartComponent,pathMatch: 'full'},
   { path:'payment',component: PaymentComponent,pathMatch: 'full'},
+
+  
  
 ];
 

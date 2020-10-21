@@ -30,8 +30,8 @@ export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
   {path:'kids',component:KidsComponent},
- 
- 
+
+  
 ];
 @NgModule({
   declarations: [
@@ -66,5 +66,5 @@ export const routes : Routes= [
   providers: [],
   bootstrap: [AppComponent],
   entryComponents: [MatdialogComponent]
-})
+})  
 export class AppModule { }

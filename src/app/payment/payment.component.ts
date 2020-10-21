@@ -18,4 +18,5 @@ export class PaymentComponent implements OnInit {
    // window.alert('Payment Successfully!!');
     this.router.navigate(['/cart']);
   }
+ 
 }
