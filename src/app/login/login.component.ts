@@ -179,7 +179,7 @@ export const userArray=
  "email":"matheswari123.com",
  "phoneno":"9566572565", 
  "address":"5/234,s16 PK nagar" ,
-  "city":"Tuticorin",
+  "city":"Kovilpatti",
   "state":"Tamilnadu",
    
  },

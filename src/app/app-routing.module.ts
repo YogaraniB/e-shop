@@ -11,6 +11,7 @@ import { HomeLayoutComponent } from './layouts/home-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PdfComponent } from './pdf/pdf.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -19,8 +20,8 @@ const routes: Routes = [
     component: HomeLayoutComponent,
     children: [
       {
-        path: 'login',
-        component: LoginComponent
+        path: 'Toolbar',
+        component: ToolbarComponent
       }
     ]
     

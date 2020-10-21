@@ -27,6 +27,9 @@ import {MatDialogModule} from "@angular/material/dialog";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { PaymentComponent } from './payment/payment.component';
 import { PdfComponent } from './pdf/pdf.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MatMenuModule} from '@angular/material/menu';
+
 export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
@@ -57,11 +60,16 @@ export const routes : Routes= [
   
     PaymentComponent,
   
-    PdfComponent
+    PdfComponent,
+  
+    ToolbarComponent,
+  
+   
   ],
   imports: [
     BrowserModule,SharedModule,
     MatDialogModule,
+    MatMenuModule,
     AppRoutingModule,MaterialModule,MatSnackBarModule,
     NgImageSliderModule,
     BrowserAnimationsModule, RouterModule.forRoot(routes)

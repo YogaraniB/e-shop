@@ -5,16 +5,20 @@
       <div class="col-md-8"> 
         <table class="table table-bordered">
           <tr class="table-primary" >
-            <th>Id</th>
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
           </tr>
-          <tr *ngFor="let user of USERS">
-            <th>{{user.userid}}</th>
-            <td>{{user.username}}</td>
-            <td>{{user.email}}</td>
-            <td>{{user.phoneno}}</td>
+          <tr>
+            <th>{{userDisplayName}}</th>
+            <td>{{userDisplayEmail}}</td>
+            <td>{{userDisplayPhone}}</td>
+            <td>{{userDisplayAdd}}</td>
+            <td>{{userDisplayCity}}</td>
+            <td>{{userDisplayState}}</td>
           </tr>
         </table>
       </div>

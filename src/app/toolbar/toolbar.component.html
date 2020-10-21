@@ -1,0 +1,27 @@
+<mat-toolbar style="background-color: rgb(0, 183, 255);"   class="fixed-header">
+    <mat-toolbar-row>
+    <div class="brand">
+        <span>Flipkart<img class="img-fluid" src="assets/img/logo.png" style="width:50px;"></span>     
+    </div>
+    <!--Search bar-->
+    <div class="sb-example-1">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="Search for products, brands and more">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+    </div>
+    
+
+    <a mat-button [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger" (mouseover)="menuTrigger.openMenu()"style="font-size: 20px; padding-left: 15px; color:white; ">
+        Login
+    </a>
+      <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <span (mouseleave)="menuTrigger.closeMenu()">
+        <a  mat-button  routerLink="/login" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; color: rgb(14, 151, 206); ">User Login</a>
+         <a mat-button  routerLink="/admin" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; color: rgb(14, 151, 206); ">Admin Login</a>       
+       </span>
+</mat-menu>
+</mat-toolbar-row>
+</mat-toolbar>

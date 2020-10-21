@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home-layout',
   template: `
-    <app-login></app-login>
+    <app-toolbar></app-toolbar>
     <router-outlet></router-outlet>
   `,
   styles: []
