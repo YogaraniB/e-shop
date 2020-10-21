@@ -8,10 +8,11 @@ import{ MatDialog,MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog'
 })
 export class MatdialogComponent  implements OnInit {
   userDisplayName = '';
-  //userDisplayAdd='';
+  userDisplayAdd='';
   userDisplayEmail='';
   userDisplayPhone='';
-  //userDisplayAdd1='';
+  userDisplayCity='';
+  userDisplayState='';
   constructor(
     public dialogRef: MatDialogRef<MatdialogComponent>) { }
    
@@ -22,7 +23,9 @@ export class MatdialogComponent  implements OnInit {
       this.userDisplayName = localStorage.getItem('token');
       this.userDisplayEmail = localStorage.getItem('email');
       this.userDisplayPhone = localStorage.getItem('phoneno');
-      //this.userDisplayAdd = localStorage.getItem('address.doorNo');
-      //this.userDisplayAdd1 = localStorage.getItem('address.street');
+      this.userDisplayAdd = localStorage.getItem('address');
+      this.userDisplayCity = localStorage.getItem('city');
+      this.userDisplayState = localStorage.getItem('state');
+      
     }
    }
