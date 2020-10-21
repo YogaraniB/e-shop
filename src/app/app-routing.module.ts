@@ -41,13 +41,9 @@ const routes: Routes = [
   { path:'details/:id',component: DetailsComponent,pathMatch: 'full'},
   { path:'cart',component: CartComponent,pathMatch: 'full'},
   { path:'payment',component: PaymentComponent,pathMatch: 'full'},
-<<<<<<< HEAD
 
   
  
-=======
-  { path:'pdf',component: PdfComponent,pathMatch: 'full'},
->>>>>>> 172a0aea4c5ec669a9573f5bdfb2d60d502a2d96
 ];
 
 @NgModule({

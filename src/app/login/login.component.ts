@@ -100,14 +100,10 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required],
       email: [''],
       phoneno: [''],
-<<<<<<< HEAD
       address:[''],
       state:[''],
       city:[''],
 
-=======
-      address:['']
->>>>>>> 172a0aea4c5ec669a9573f5bdfb2d60d502a2d96
       
       
     });
@@ -145,13 +141,8 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('email',userdetail[0].email);
         localStorage.setItem('phoneno',userdetail[0].phoneno);
         localStorage.setItem('address',userdetail[0].address);
-<<<<<<< HEAD
         localStorage.setItem('city',userdetail[0].city);
         localStorage.setItem('state',userdetail[0].state);
-=======
-        //localStorage.setItem('address',userdetail[0].address.street);
-
->>>>>>> 172a0aea4c5ec669a9573f5bdfb2d60d502a2d96
         localStorage.setItem('isLoggedIn', "true");
         localStorage.setItem('password',this.f.password.value);
         localStorage.setItem('token', userdetail[0].username);
@@ -176,13 +167,9 @@ export const userArray=
   "password": "surya" ,
   "email":"suryarajan361@gmail.com",
   "phoneno":"9566572539",
-<<<<<<< HEAD
   "address":"5/231,s15 RK nagar" ,
   "city":"Tuticorin",
   "state":"Tamilnadu",
-=======
-  "address": "abc street, Chennai"  
->>>>>>> 172a0aea4c5ec669a9573f5bdfb2d60d502a2d96
    
  },
  {
@@ -191,13 +178,9 @@ export const userArray=
  "password": "123", 
  "email":"matheswari123.com",
  "phoneno":"9566572565", 
-<<<<<<< HEAD
  "address":"5/234,s16 PK nagar" ,
   "city":"Tuticorin",
   "state":"Tamilnadu",
-=======
- "address": "xyz street,Coimbatore" 
->>>>>>> 172a0aea4c5ec669a9573f5bdfb2d60d502a2d96
    
  },
  {
@@ -206,13 +189,9 @@ export const userArray=
   "password": "mahi123", 
   "email":"rajamaheshwari@gmail.com",
   "phoneno":"95665654667",
-<<<<<<< HEAD
   "address":"5/233,a15 T nagar" ,
   "city":"Sivakasi",
   "state":"Tamilnadu"
-=======
-  "address": "dfl street, Trichy"
->>>>>>> 172a0aea4c5ec669a9573f5bdfb2d60d502a2d96
    
  },
 ]
