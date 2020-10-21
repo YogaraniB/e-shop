@@ -16,7 +16,7 @@ export class PaymentComponent implements OnInit {
   openSnackbar(message,action){
     this.snackBar.open(message,action);
    // window.alert('Payment Successfully!!');
-    this.router.navigate(['/cart']);
+    this.router.navigate(['/pdf']);
   }
  
 }

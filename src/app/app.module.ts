@@ -26,6 +26,7 @@ import { MatdialogComponent } from './matdialog/matdialog.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { PaymentComponent } from './payment/payment.component';
+import { PdfComponent } from './pdf/pdf.component';
 export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
@@ -54,7 +55,9 @@ export const routes : Routes= [
   
     MatdialogComponent,
   
-    PaymentComponent
+    PaymentComponent,
+  
+    PdfComponent
   ],
   imports: [
     BrowserModule,SharedModule,

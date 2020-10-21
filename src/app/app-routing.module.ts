@@ -10,6 +10,7 @@ import { CartService } from './cart.service';
 import { HomeLayoutComponent } from './layouts/home-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout.component';
 import { PaymentComponent } from './payment/payment.component';
+import { PdfComponent } from './pdf/pdf.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -40,9 +41,13 @@ const routes: Routes = [
   { path:'details/:id',component: DetailsComponent,pathMatch: 'full'},
   { path:'cart',component: CartComponent,pathMatch: 'full'},
   { path:'payment',component: PaymentComponent,pathMatch: 'full'},
+<<<<<<< HEAD
 
   
  
+=======
+  { path:'pdf',component: PdfComponent,pathMatch: 'full'},
+>>>>>>> 172a0aea4c5ec669a9573f5bdfb2d60d502a2d96
 ];
 
 @NgModule({

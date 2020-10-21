@@ -3,7 +3,7 @@
             <h2 class="card-title" style="font-weight: 500;">Review Cart</h2>
             <div class="cart-item" *ngFor="let item of items">
                 <span>{{ item.name }} </span>
-                <input type="number" ng-model="quantity" placeholder="Quantity">
+                <input type="number"  [(ngModel)]="total"/>
                 <span>{{ item.price | currency:'INR' }}</span>
             </div>
             <p><b>Grand Total:</b></p>
