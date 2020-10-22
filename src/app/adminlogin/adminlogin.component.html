@@ -1,0 +1,41 @@
+
+
+
+    <div class="bg">
+        <div class="login-content">
+          <mat-toolbar class="login-toolbar" color="primary">Admin Login</mat-toolbar>
+          <mat-card>
+            <mat-card-header>
+            
+            <img mat-card-image src="https://ak.picdn.net/shutterstock/videos/7823737/thumb/1.jpg">
+          </mat-card-header>
+          <form class="example-form">
+              <table class="example-full-width" cellspacing="0">
+               <tr>
+                <td>
+  
+                <mat-form-field class="example-full-width">
+                <input matInput placeholder="Username"[(ngModel)]="username" name="username" required>     
+            </mat-form-field>
+              </td>
+             </tr>
+            <tr>
+            <td>
+
+              <mat-form-field class="example-full-width">
+              <input matInput placeholder="Password"[(ngModel)]="password"type="password" name="password" required>     
+              </mat-form-field>
+             </td>
+            </tr>
+            </table>
+          </form>
+       
+        <mat-card-actions>
+              <button mat-raised-button (click)="login()"  class="bttn">Login</button>
+        </mat-card-actions>
+        </mat-card>
+    </div>
+    </div>
+  
+  
+  

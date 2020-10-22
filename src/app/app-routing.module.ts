@@ -12,7 +12,8 @@ import { LoginLayoutComponent } from './layouts/login-layout.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PdfComponent } from './pdf/pdf.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' },
   {
@@ -39,6 +40,8 @@ const routes: Routes = [
 
  // { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   { path:'login', component: LoginComponent,pathMatch: 'full'},
+  { path:'adminlogin', component: AdminloginComponent,pathMatch: 'full'},
+  { path:'adminpanel', component: AdminpanelComponent,pathMatch: 'full'},
   { path:'details/:id',component: DetailsComponent,pathMatch: 'full'},
   { path:'cart',component: CartComponent,pathMatch: 'full'},
   { path:'payment',component: PaymentComponent,pathMatch: 'full'},

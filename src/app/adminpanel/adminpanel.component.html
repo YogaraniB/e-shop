@@ -1,0 +1,33 @@
+<mat-toolbar style="background-color:lightsalmon"   class="fixed-header">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+          </button>
+          
+            <div class="brand">
+                <span>ADMIN PANEL</span>     
+            </div>
+            <!--Search bar-->
+           
+          <!-- <a  mat-button  routerLink="/toolbar" routerLinkActive="active" style="font-size: 20px; padding-left: 15px; ">logout</a>-->
+            
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation" class="example-sidenav" style="background-color:lightsalmon">
+       <mat-nav-list style="width: 150px;">
+      
+        <a mat-list-item routerLink='product'> product </a> 
+        
+      </mat-nav-list>
+    </mat-sidenav> 
+    <mat-sidenav-content>
+     <h1>Add New Product</h1>
+        <p style="height: 88vh;">
+          <router-outlet></router-outlet>
+        </p>
+    </mat-sidenav-content>
+  </mat-sidenav-container>  
+
+ 
+  

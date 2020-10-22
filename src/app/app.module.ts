@@ -29,6 +29,8 @@ import { PaymentComponent } from './payment/payment.component';
 import { PdfComponent } from './pdf/pdf.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MatMenuModule} from '@angular/material/menu';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 
 export const routes : Routes= [
   {path:'men',component:MenComponent},
@@ -63,6 +65,10 @@ export const routes : Routes= [
     PdfComponent,
   
     ToolbarComponent,
+  
+    AdminloginComponent,
+  
+    AdminpanelComponent,
   
    
   ],

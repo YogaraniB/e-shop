@@ -89,4 +89,9 @@ body{
     width: 200px;
    
 }
+.bg1{
+    background-image: url("/assets/66.jpg");
+    background-size: 100% 100%;
+  
+  }
 

@@ -1,0 +1,72 @@
+.main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    margin: 0;
+    color: #6a6f8c;
+    background: #c8c8c8;
+    font: 600 16px/18px 'Open Sans', sans-serif
+  }
+  .mat-toolbar {
+    background:blue;
+    color: #fff;
+    position: sticky;
+  }
+  .icon-color {
+    color:black;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  .login-content {
+    width: 500px;
+    margin-left: 700px;
+   
+    padding: 60px;
+  }
+  
+  
+  
+  .login-toolbar {
+    background:rgb(228, 126, 197);
+    justify-content: center;
+  }
+  .bttn{
+    background:rgb(144, 144, 158);
+  }
+  .bg{
+    background-image: url("/assets/88.jpg");
+    background-size: 100% 100%;
+  
+  }
+  .mat-form-field {
+    width: 100%;
+    display: block;
+  }
+  
+  .mat-raised-button {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .mat-card img{
+    object-fit: cover; /*this makes the image in src fit to the size specified below*/
+    width: 90%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+    height: 50%;
+    left:500px;
+    right:600px;
+    
+   
+  }
+  
+  
+  
+  h1.thicker {
+    font-weight: 1000;
+    font-style: italic;
+    
+  }
